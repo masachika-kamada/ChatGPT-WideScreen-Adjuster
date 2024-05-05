@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ChatGPT WideScreen Adjuster",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "__MSG_appDesc__",
     "default_locale": "en",
     "author": "Kamada Masachika",
@@ -15,7 +15,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://chat.openai.com/*"
+                "https://chatgpt.com/*"
             ],
             "js": [
                 "script.js"
