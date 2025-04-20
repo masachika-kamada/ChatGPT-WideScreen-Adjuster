@@ -7,10 +7,8 @@ function updateWidth(width) {
 
   styleElement = document.createElement('style');
   styleElement.textContent = `
-    @media (min-width: 1280px) {
-      .xl\\:max-w-3xl, .md\\:max-w-3xl {
-        max-width: ${width}rem !important;
-      }
+    .\\[--thread-content-max-width\\:32rem\\] {
+      --thread-content-max-width: ${width}rem !important;
     }
   `;
   document.head.appendChild(styleElement);
